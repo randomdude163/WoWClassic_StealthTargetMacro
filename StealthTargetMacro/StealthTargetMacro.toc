@@ -1,0 +1,6 @@
+## Interface: 11506
+## Title: Stealth Target Macro
+## Notes: Updates a target macro for enemy Rogues and Druids
+## Author: Severussnipe
+
+StealthTargetMacro.lua

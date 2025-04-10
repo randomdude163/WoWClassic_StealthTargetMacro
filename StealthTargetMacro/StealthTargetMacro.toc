@@ -1,4 +1,4 @@
-## Interface: 11506
+## Interface: 11507
 ## Title: Stealth Target Macro
 ## Notes: Updates a target macro for enemy Rogues and Druids
 ## Author: Severussnipe

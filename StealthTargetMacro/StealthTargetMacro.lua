@@ -26,7 +26,7 @@ local function CreateMacroIfNotExists()
         local macroId = CreateMacro("StealthTarget", "INV_MISC_QUESTIONMARK",
             "#showtooltip\n/targetexact\n/cast Hunter's Mark\n/petattack", nil) -- nil for character-specific macros
         if macroId then
-            -- print("Macro 'StealthTarget' created with ID: " .. macroId)
+            print("[Stealth Target Macro]: Macro 'StealthTarget' created (in General Macros). You need to bind it to your action bar.")
         else
             print("[Stealth Target Macro]: Error: Failed to create macro 'StealthTarget'.")
         end
@@ -83,7 +83,7 @@ local function OnEvent(self, event, ...)
         end
     elseif event == "ADDON_LOADED" then
         local addonName = ...
-        if addonName == "RogueTargetMacro" then
+        if addonName == "StealthTargetMacro" then
             C_Timer.After(1, CreateMacroIfNotExists)
         end
     elseif event == "UPDATE_MOUSEOVER_UNIT" then
